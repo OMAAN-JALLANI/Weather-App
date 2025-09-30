@@ -1,0 +1,154 @@
+body {
+  min-height: 100vh;  
+  background-image: url("/sun.webp");
+  background-repeat: no-repeat;
+  background-size: cover;    
+  background-position: center;  
+  color: white;
+   font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color : white;
+    --box : rgba(240, 235, 231, 0.22);
+}
+.input{
+    height: 50px;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content{
+    height: 35px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.content button{
+    height: 30px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--box);
+    color: var(--color); 
+    cursor: pointer;
+    margin-right: 20px;
+}
+ input{
+    height: 35px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+    outline: none;
+    background-color: var(--box);
+    color: var(--color);
+}
+
+ .hero{
+height: 350px;
+width: 100%; 
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.left{
+
+    height: 350px;
+    width: 40%; 
+}
+.left h1{
+    font-weight: lighter;
+    margin: 0;
+    font-size: 150px;
+}
+.left p{
+    margin-top: -20px;
+    letter-spacing: 3px;
+    font-size: 23px;
+}
+.box{
+    margin-top: 15px;
+}
+.w-condition{ 
+    
+    width: 530px;
+    font-weight: lighter;
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+.w-condition p{
+    font-size: 55px; 
+}
+.w-condition div{ 
+letter-spacing: 6px;
+    margin-top: -56px;
+
+}
+
+
+.right{  
+    height: 350px;
+    width: 40%;
+}
+.box{
+    display: grid;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.box-tmp{
+    margin-top: -10px;
+    background-color: var(--box);
+    font-size: 32px;
+    margin: 0; 
+    height: 300px;
+    width: 350px;
+    border-radius: 46px;
+
+}
+.box-tmp div{
+    font-size: 22px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+box-shadow: 0 2px 0 0px rgba(0,0,0,0.1);
+}
+.box-tmp button{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--box);
+    color: var(--color);
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 70px;
+    top: 20px;
+}
+
+
+.days{
+height: 300px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly; 
+}
+
+.days div{
+    height: 250px;
+    width: 250px;
+    background-color: var(--box);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: var(--color);
+    font-size: 20px;
+}
