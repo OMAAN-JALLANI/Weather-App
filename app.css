@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;  
-  background-image: url("/sun.webp");
+  background-image: url("./sun.webp");
   background-repeat: no-repeat;
   background-size: cover;    
   background-position: center;  
@@ -63,7 +63,7 @@ justify-content: space-around;
 .left h1{
     font-weight: lighter;
     margin: 0;
-    font-size: 150px;
+    font-size: 100px;
 }
 .left p{
     margin-top: -20px;
