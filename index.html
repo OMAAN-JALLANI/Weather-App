@@ -10,7 +10,22 @@
 
 </head>
 <body>   
-    <iframe src="https://skybox.blockadelabs.com/e/3d7014f75081708c9564bec24ed5cf9a" width=700 height=700 style="border:0;" allow="fullscreen"></iframe>
+    <iframe id="Skybox" src="https://skybox.blockadelabs.com/e/3d7014f75081708c9564bec24ed5cf9a" width="100%" loading="lazy"
+  height="100%" 
+  style="border: none; position: fixed; top: 0; left: 0; z-index: -1;" 
+  allow="fullscreen"></iframe>
+  <div class="loader">
+    <div class="container" >
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+  </div>
    <div class="input">
     <div class="content">
          <input type="text" id="Search" placeholder="Search City">
@@ -22,8 +37,8 @@
             <h1 id="temp">28°</h1>
             <p id="adress">Lahore,punjab,pakistan.</p>
             <div class="w-condition">
-                <p>Today the</p>
-                <div class="condition">weather is <strong id="condition">Sunny</strong></div>
+                <p>Today the weather</p>
+                <div class="condition"> is <strong id="condition">Sunny</strong> <img src="" id="icon" ></div>
             </div>
         </div>
         <div class="right">
