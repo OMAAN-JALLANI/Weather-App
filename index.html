@@ -9,42 +9,55 @@
     <link href="https://fonts.googleapis.com/css2?family=inter" rel="stylesheet">
 
 </head>
-<body>   
-    <iframe id="Skybox" src="https://skybox.blockadelabs.com/e/3d7014f75081708c9564bec24ed5cf9a" width="100%" loading="lazy"
-  height="100%" 
-  style="border: none; position: fixed; top: 0; left: 0; z-index: -1;" 
+<body>  <body>   
+<iframe  
+  src="https://skybox.blockadelabs.com/e/3d7014f75081708c9564bec24ed5cf9a"
+  width="100%" height="100%"
+  loading="lazy"
+  style="border: none; position: fixed; top: 0; left: 0; z-index: -2; "
   allow="fullscreen"></iframe>
+
+  <!-- Loader -->
   <div class="loader">
-    <div class="container" >
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
+    <div class="container">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
   </div>
-   <div class="input">
+
+  <!-- First Screen -->
+  <div class="start-screen" id="start">
+  <h1>SIMPLE WEATHER</h1>
+  <input type="text" id="SearchStart" placeholder="Enter City">
+  <button onclick="Getcity('SearchStart')">Search</button>
+</div>
+
+  <!-- Weather Content -->
+  <div class="main-content hidden" id="main">
+     <div class="input">
     <div class="content">
-         <input type="text" id="Search" placeholder="Search City">
-            <button id="search-btn" onclick="Getcity()"><i class="fa-solid fa-magnifying-glass"></i></button>
+       <input type="text" id="SearchMain" placeholder="Search City">
+       <button onclick="Getcity('SearchMain')">
+         <i class="fa-solid fa-magnifying-glass"></i>
+       </button>
     </div>
    </div>
     <div class="hero">
         <div class="left">
-            <h1 id="temp">Search city</h1>
-            <p id="adress"> </p>
+            <h1 id="temp">--°C</h1>
+            <p id="adress"></p>
             <div class="w-condition">
                 <p>Today the</p>
-                <div class="condition"> weather is <strong id="condition"> -- </strong> <img src="" id="icon" ></div>
+                <div class="condition">
+                  weather is <strong id="condition"> -- </strong> 
+                  <img src="" id="icon" >
+                </div>
             </div>
         </div>
         <div class="right">
             <div class="box">
                 <div class="box-tmp">
-                    <div class="feels-like" >
+                    <div class="feels-like">
                         <p>Feels like</p>
                         <p id="feels-like"> --°C</p>
                     </div>
@@ -53,33 +66,36 @@
                         <p id="Humidity"> --%</p>
                     </div>
                     <div class="wind-speed">
-                        <p>wind-speed</p>
+                        <p>Wind speed</p>
                         <p id="wind-speed">-- km/h</p>
                     </div>
-                    <button>See more...</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Days -->
     <div class="days">
-        <div class="day-1">
-        <p class="date1">Searching... </p>
-        <p class="weather1">-- </p>
-        <p class="max1"> --°C </p>
-        <p class="min1">--°C </p>
-        </div>
-        <div class="day-2">
-        <p class="date2">Searching... </p>
-        <p class="weather2">-- </p>
-        <p class="max22">--°C </p>
-        <p class="min">--°C </p>
-        </div> <div class="day-3">
-        <p class="date33">Searching... </p>
-        <p class="weather3">-- </p>
-        <p class="max">--°C </p>
-        <p class="min3">--°C </p>
-        </div>
+      <div class="day">
+        <p class="date1">Date 1</p>
+        <p class="weather1">Weather 1</p>
+        <p class="max1">Max 1</p>
+        <p class="min1">Min 1</p>
+      </div>
+      <div class="day">
+        <p class="date2">Date 2</p>
+        <p class="weather2">Weather 2</p>
+        <p class="max2">Max 2</p>
+        <p class="min2">Min 2</p>
+      </div>
+      <div class="day">
+        <p class="date3">Date 3</p>
+        <p class="weather3">Weather 3</p>
+        <p class="max3">Max 3</p>
+        <p class="min3">Min 3</p>
+      </div>
     </div>
+  </div>
 </body>
 <script src="app.js"></script>
 </html>
