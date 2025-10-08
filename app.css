@@ -178,13 +178,11 @@ body {
   background: #fff;
   color: #333;
 }
-
-/* Hide initially */
+ 
 .hidden {
   display: none;
 }
-
-/* Fade animation */
+ 
 .fade-in {
   animation: fadeIn 1s forwards;
 }
@@ -232,13 +230,13 @@ body {
 .content button {
     height: 40px;
     width: 40px;
-    border-radius: 50%;  /* ab perfect gol banega */
+    border-radius: 50%;  
     border: none;
     background-color: var(--box);
     color: var(--color); 
     cursor: pointer;
     margin-right: 20px;
-    font-size: 16px;  /* icon center aur readable */
+    font-size: 16px;   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,8 +316,8 @@ letter-spacing: 6px;
 }
 
 .box-tmp{
-    margin-top: -10px;
-    background-color: var(--box);
+    margin-top: -10px; 
+    backdrop-filter: blur(30px);
     font-size: 32px;
     margin: 0; 
     height: 300px;
@@ -368,4 +366,92 @@ justify-content: space-evenly;
     flex-direction: column;
     color: white;
     font-size: 20px;
+}
+/* ----- Mobile Responsive ----- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .left h1 {
+    font-size: 60px;
+  }
+
+  .left p {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .w-condition {
+    font-size: 28px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .w-condition p {
+    font-size: 24px;
+  }
+  .w-condition div {
+    margin-top: -20px;
+    font-size: 20px;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .box-tmp {
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    padding: 15px;
+  }
+  .box-tmp div {
+    font-size: 18px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .box-tmp button {
+    width: 100%;
+    left: 0;
+    top: 10px;
+    position: relative;
+  }
+
+  .days {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .days div {
+    width: 90%;
+    height: 180px;
+    font-size: 18px;
+  }
+
+  .input {
+    width: 100%;
+    justify-content: center;
+  }
+  .content {
+    width: 90%;
+  }
+  input {
+    width: 100%;
+    font-size: 16px;
+  }
 }

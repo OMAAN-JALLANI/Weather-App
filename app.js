@@ -8,8 +8,7 @@ async function fetchWeather(City) {
     );
     let data = await response.json();
     loading.style.visibility = "hidden";
-
-    // Current weather
+ 
     document.getElementById("temp").innerHTML = data.current.temp_c + "°C";
     document.getElementById("condition").innerHTML = data.current.condition.text;
     document.getElementById("icon").src = data.current.condition.icon;
@@ -18,8 +17,7 @@ async function fetchWeather(City) {
     document.getElementById("wind-speed").innerHTML = data.current.wind_kph + " km/h";
     document.getElementById("adress").innerHTML =
       data.location.name + ", " + data.location.region + ", " + data.location.country;
-
-    // Forecast
+ 
     data.forecast.forecastday.forEach((day, index) => {
       document.querySelector(`.date${index + 1}`).innerHTML =
         new Date(day.date).toLocaleDateString("en-US", {
@@ -43,8 +41,7 @@ async function Getcity(inputId) {
     alert("Please enter a city name");
     return;
   }
-
-  // अगर search पहली screen से हो रही है तो transition दो
+  
   if (inputId === "SearchStart") {
     const start = document.getElementById("start");
     const main = document.getElementById("main");
@@ -57,6 +54,5 @@ async function Getcity(inputId) {
     }, 800);
   }
 
-  // Weather लाओ
   await fetchWeather(City);
 }
